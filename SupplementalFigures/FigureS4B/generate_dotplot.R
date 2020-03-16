@@ -1,4 +1,5 @@
 #!/usr/bin/Rscript
+library(cowplot)
 
 source("dplot_function.R")
 ## you need to  have the pbmc.ctrl object already
