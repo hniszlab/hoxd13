@@ -4,7 +4,7 @@ library(cowplot)
 source("dplot_function.R")
 ## you need to  have the pbmc.ctrl object already
 ## you can generate it by running the script first in an R session 
-## Figure5/ScRNA-Seq_data_processing/labbook_analyses.R
+## Figure5/ScRNA-Seq_data_processing/generate_figure_5B_and_analyses.R
 ## and then run everything following below
 
 p <- pbmc.ctrl
