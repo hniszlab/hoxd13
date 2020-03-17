@@ -3,11 +3,11 @@
 DPATH=../../Fdata/FigureS3D/
 
 #PV=5
-python3 compare_bed_files_rpmbp.py -a $DPATH/3749_3750_v3_gg3_merged_sorted_5_peaks.bed \
-	-A $DPATH/3746_GCCAAT_R1_001_v3_gg3_merged_sorted_5_peaks.bed \
+python3 compare_bed_files_rpmbp.py -a $DPATH/WT_chicken_peaks_merged.bed \
+	-A $DPATH/SPDH_chicken_peaks_pv1e5.bed \
 	-t wt12 -T 7A \
-	-b $DPATH/3749_3750_v3_gg3_merged_sorted.bam \
-	-B $DPATH/3746_GCCAAT_R1_001_v3_gg3_merged_sorted.bam
+	-b $DPATH/WT_chicken_merged_sorted.bam \
+	-B $DPATH/SPDH_chicken_merged_sorted.bam
 
 
 #PV=10
@@ -25,5 +25,3 @@ cd -
 cd rpmbp_comp_D13r12_vs_QR
 Rscript make_raster_plot.R rpmbp_D13r12_vs_QR.intersect_tag_fused_sorted.bed_D13r12 rpmbp_D13r12_vs_QR.intersect_tag_fused_sorted.bed_QR HOXD13_merged HOXD13_QR
 cd -
-
-

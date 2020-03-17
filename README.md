@@ -3,6 +3,7 @@
 ## About 
 
 Author: Sebastian Mackowiak 
+
 The scripts found in this repository were used to generate
 various figures in ... 
 

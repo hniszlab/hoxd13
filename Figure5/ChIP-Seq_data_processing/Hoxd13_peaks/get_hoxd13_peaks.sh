@@ -17,4 +17,4 @@ for num in 35 39;do
 done
 
 ## running macs14
-macs14 -t SRR3498935.sam -c SRR3498939.sam -g mm9 --pvalue 10 -f SAM -w -S --space=50 --keep-dup=auto
+macs14 -t SRR3498935.sam -c SRR3498939.sam -g mm9 --pvalue 1e-10 -f SAM -w -S --space=50 --keep-dup=auto
