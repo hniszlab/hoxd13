@@ -22,7 +22,7 @@ git clone git@github.com/hnisz/hoxd13
 
 1b. download the zip file and extract it by typing
 ``` 
-unzip hoxd13.zipo
+unzip hoxd13.zip
 ```
 
 2. Change the directory of the hoxd13 project
