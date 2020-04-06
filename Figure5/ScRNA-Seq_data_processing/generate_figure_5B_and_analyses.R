@@ -30,7 +30,7 @@ library(irlba)
 library(Seurat,lib.loc=paste(DPATH,"myseurat2.3.4",sep=""))
 
 ## get genes on chromosome M
-mito=scan(paste(DPATH,"/gencode.vM19_mitochondrial_genes.id",what="char")
+mito=scan(paste(DPATH,"/gencode.vM19_mitochondrial_genes.id",sep=""),what="char")
 
 source("./process_seurat.R")
 
@@ -82,11 +82,13 @@ if(cells_spdh < 1e4){
 	bord<- 1e4*ceiling(cells_spdh/1e4)
 }
 
+## keep the original cell names aka barcode used since we need it for the browser tracks
 
+## uncomment if you want the cell number instead
 ## set colnames appropriately
-colnames(spdh)=paste("spdh",1:cells_spdh,sep="_")
+#colnames(spdh)=paste("spdh",1:cells_spdh,sep="_")
 ##                           5001     5000 
-colnames(ctrl)=paste("ctrl",(bord+1):(bord+cells_ctrl),sep="_")
+#colnames(ctrl)=paste("ctrl",(bord+1):(bord+cells_ctrl),sep="_")
 
 ## these are the gene symbols only 
 rw=rownames(ctrl)
@@ -131,7 +133,7 @@ names(allc) <- c("ctrl","spdh")
 #names(allc) <- c("ctrl","ctrl_hox_pos","ctrl_hox_neg","spdh","spdh_hox_pos","spdh_hox_neg")
 
 ## raw plot from figure 5B
-TSNEPlot(object = allc[[1]],plot.title=names(allc)[1])
+#TSNEPlot(object = allc[[1]],plot.title=names(allc)[1])
 
 ## plot in figure 5B
 p <- pbmc.ctrl
@@ -336,3 +338,30 @@ for (i in 1:11){
     write.table(allm[[i]], file=paste("diffex_genes/diffex_genes_cluster_",i,".tsv",sep=""),quote=F,row.names=T,col.names=c("p_val","avg_log2FC","wt","spdh","p_val_adj"))
 }
 
+
+####################################
+#
+#
+# Figure5F/S5D need the cell barcodes
+#
+#
+###################################
+
+if(!file.exists("barcodes")){
+    dir.create(file.path("barcodes"))
+}
+
+
+## write out barcodes of each cell per cluster for ctrl cells
+for(i in 0:10){
+    j=i+1
+    ttt<-names(pbmc.ctrl@ident)[which(pbmc.ctrl@ident == i)]
+    write.table(ttt, file=paste("./barcodes/barcodes_ctrl_cells_cluster_",j,".tsv",sep=""),quote=F,row.names=F,col.names=F)
+}
+
+## write out barcodes of each cell per clusters for spdh assigned
+for(i in 0:10){
+    j=i+1
+    ttt<- colnames(sobj)[which(spdh_avex.cl == j)]
+    write.table(ttt, file=paste("./barcodes/barcodes_spdh_cells_cluster_",j,".tsv",sep=""),quote=F,row.names=F,col.names=F)
+}

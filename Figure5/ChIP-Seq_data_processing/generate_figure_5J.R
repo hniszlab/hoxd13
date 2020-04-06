@@ -1,5 +1,6 @@
 #!/usr/bin/Rscript
 
+
 # generate_figure_5J.R -  R script
 # Copyright (C) 2018  Sebastian Mackowiak
 #
@@ -55,7 +56,6 @@ if( spdh == "L18076"){
 
 ## normalizing factors from spikeins
 ##      wt       het        hom
-#nf=c(1.003527,1.022985,0.652182)
 nf=c(1.000752,0.904761,0.766738)
 
 do.norm=1

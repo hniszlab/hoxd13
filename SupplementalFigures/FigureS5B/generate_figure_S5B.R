@@ -141,3 +141,12 @@ points(t1t[spdh.it,i],t1t[spdh.it,j],col="brown",pch=16)
 legend("topleft",c(paste("spdh",length(spdh.it))),col=c("brown"),pch=15)
 dev.off()
 
+## table for S5C
+## cluster8 is counted from 0, so it is cluster9 in the figure
+markers_no_regress <- FindAllMarkers(object = pbmc_no_regress, only.pos = TRUE, min.pct = 0.25, thresh.use = 0.25)
+cluster8 <- markers_no_regress[which(markers_no_regress$cluster == 8),]
+write.table(cluster8[,7],file="cluster8_genes.tsv",col.names=F,row.names=F,quote=F)
+
+
+
+
