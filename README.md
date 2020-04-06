@@ -7,6 +7,8 @@ Author: Sebastian Mackowiak
 The scripts found in this repository were used to generate
 various figures in ...
 
+The author of each script can be found at the top of each script file.  
+
 Complementary data for the scripts can be found at
 mendeley.com/hniszlab/Fdata
 
@@ -36,6 +38,8 @@ wget mendeley.com/hnisz/Fdata
 ```
 
 ## Running the code
+All the code and packages were run in R version 3.6.0 (2019-04-26)
+
 Start an R console and install the necessary dependencies if they should be missing
 ```
 R
