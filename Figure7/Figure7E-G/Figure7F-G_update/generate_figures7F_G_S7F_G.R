@@ -173,9 +173,9 @@ for(d in c("DEdel","-7A","-15A")){
         setwd(cwd)
         j=j+1
         if(d == "-7A"){
-            setwd(paste("./Droplet quantification (raw data)/",d,sep="")) ##folder name is changed depending on the condition read in
+            setwd(paste("../../../Fdata/Figure7F-G/Droplet quantification (raw data)/",d,sep="")) ##folder name is changed depending on the condition read in
         }else{
-            setwd(paste("./Droplet quantification (raw data)/",d,"/2-4",sep="")) ##folder name is changed depending on the condition read in
+            setwd(paste("../../../Fdata/Figure7F-G/Droplet quantification (raw data)/",d,"/2-4",sep="")) ##folder name is changed depending on the condition read in
         }
 
         Droplet_quantification <- list.files()

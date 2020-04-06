@@ -21,7 +21,7 @@ library(car)
 
 
 # Read in data
-df <- read.delim("Figure6I_raw_data.txt", sep = "\t", header=TRUE, stringsAsFactors = FALSE)
+df <- read.delim("../../Fdata/Figure6I/Figure6I_raw_data.txt", sep = "\t", header=TRUE, stringsAsFactors = FALSE)
 
 # exclude GAL4-DBD control values before plotting
 df2 <- subset(df, sample!="GAL4-DBD")

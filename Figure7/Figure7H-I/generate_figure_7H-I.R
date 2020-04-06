@@ -31,7 +31,7 @@ library(car)
 ###############################################
 
 # Read in data
-df <- read.delim("Figure7H_raw_data.txt", sep = "\t", header=TRUE, stringsAsFactors = FALSE)
+df <- read.delim("../../Fdata/Figure7H-I/Figure7H_raw_data.txt", sep = "\t", header=TRUE, stringsAsFactors = FALSE)
 
 # exclude GAL4-DBD control values before plotting
 df2 <- subset(df, sample!="GAL4-DBD")
@@ -279,7 +279,7 @@ dev.off()
 ###############################################
 
 
-df <- read.delim("Figure7I_raw_data.txt", sep = "\t", header=TRUE, stringsAsFactors = FALSE)
+df <- read.delim("../../Fdata/Figure7H-I/Figure7I_raw_data.txt", sep = "\t", header=TRUE, stringsAsFactors = FALSE)
 
 df2 <- subset(df, sample!="GAL4-DBD")
 

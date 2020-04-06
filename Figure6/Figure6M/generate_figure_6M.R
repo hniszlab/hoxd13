@@ -26,7 +26,7 @@ library(plyr)
 library(Rmisc)
 library(data.table)
 
-FRAP_Runx2 <- read.csv("FRAP_merge_Runx2-series.csv")
+FRAP_Runx2 <- read.csv("../../Fdata/Figure6M/FRAP_merge_Runx2-series.csv")
 summary_FRAP_Runx2 <- summarySE(FRAP_Runx2, measurevar="Normalized_intensity", groupvars=c("Timepoint","Phenotype"))
 
 #2. Required plotting function

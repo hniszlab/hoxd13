@@ -274,7 +274,7 @@ intensity_DDC_plot_Runx2_only10 <- function(dataframe) {
 
 cwd=getwd()
 #1.2 Load the required files and run function over them  
-setwd("Raw data from the image quantification - Runx2wt and mCh-Cry2")
+setwd("../../../Fdata/Raw data from the image quantification - Runx2wt and mCh-Cry2")
 Droplet_quantification <- list.files(pattern="xlsx$")
 
 image_file <- vector("list")
