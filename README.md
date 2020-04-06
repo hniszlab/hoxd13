@@ -5,14 +5,14 @@
 Author: Sebastian Mackowiak 
 
 The scripts found in this repository were used to generate
-various figures in ... 
+various figures in ...
 
 Complementary data for the scripts can be found at
 mendeley.com/hniszlab/Fdata
 
 ## Getting a copy 
 
-1a. First checkout this github by typing on the command line
+1a. You can checkout this repository by typing on the command line
 
 ```
 git clone git@github.com/hnisz/hoxd13
@@ -27,7 +27,7 @@ unzip hoxd13.zip
 
 2. Change the directory of the hoxd13 project
 ```
-cd hodx13
+cd hoxd13
 ```
 
 3. Get the complementary data by typing
