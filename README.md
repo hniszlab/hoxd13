@@ -2,8 +2,6 @@
 
 ## About 
 
-Author: Sebastian Mackowiak 
-
 The scripts found in this repository were used to generate
 various figures in ...
 
@@ -24,6 +22,7 @@ git clone git@github.com/hnisz/hoxd13
 
 1b. download the zip file and extract it by typing
 ``` 
+wget git@github.com/hnisz/hoxd13/hoxd13.zip
 unzip hoxd13.zip
 ```
 
