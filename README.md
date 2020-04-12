@@ -2,13 +2,13 @@
 
 ## About 
 
-The scripts found in this repository were used to generate
-various figures in ...
+The scripts found in this repository were used to generate figures in ...
 
-The author of each script can be found at the top of each script file.  
-
-Complementary data for the scripts can be found at
+Complementary data for running the R scripts can be found at
 mendeley.com/hniszlab/Fdata
+
+Files for Figures generated with Graphpad Prism are contained
+in the Mendeley repository in the respective figure folder at
 
 ## Getting a copy 
 
@@ -35,9 +35,13 @@ cd hoxd13
 ```
 wget mendeley.com/hnisz/Fdata
 ```
+or by getting the corresponding figure folder (X) with 
+```
+wget mendeley.com/hnisz/FigureX 
+```
 
 ## Running the code
-All the code and packages were run in R version 3.6.0 (2019-04-26)
+All R code and packages were run in R version 3.6.0 (2019-04-26)
 
 Start an R console and install the necessary dependencies if they should be missing
 ```

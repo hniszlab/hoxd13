@@ -1,7 +1,9 @@
 #!/usr/bin/Rscript
 
-## need to prerun 
+## start an R session and run 
 #../../Figure5/ScRNA-Seq_data_processing/generate_figure_5B_and_analyses.R
+## before continuing with the code below
+
 
 ## get all genes expressed in cluster 1:11 with mean expression > 0,0.5 and 1
 for(thres in c(0,0.5,1)){

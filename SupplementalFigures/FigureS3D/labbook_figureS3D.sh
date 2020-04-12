@@ -18,7 +18,7 @@ python3 compare_bed_files_rpmbp.py -a $DPATH/HOXD13r12_v3_gg3_merged_sorted_5_pe
 	-B $DPATH/HOXD13QRr12_v3_gg3_merged_sorted.bam
 
 
-## making paper figures, Note. The 
+## making paper figures.
 cd rpmbp_comp_wt12_vs_7A
 Rscript ../make_raster_plot.R rpmbp_wt12_vs_7A.intersect_tag_fused_sorted.bed_wt12 rpmbp_wt12_vs_7A.intersect_tag_fused_sorted.bed_7A HOXD13_merged SPDH
 cd -
