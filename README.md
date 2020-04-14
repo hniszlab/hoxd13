@@ -1,7 +1,9 @@
 # hoxd13 `Readme`
 
 ## About 
-Complementary data for running most of the R scripts can be found at Mendeley
+Authors: Sebastian Mackowiak, Shaon Basu, Henri Niskanen, Dora Knezevic
+
+Complementary data for running most of the R scripts can be found at Mendeley, doi:""
 
 ## Getting a copy 
 
