@@ -35,7 +35,7 @@ pos_set10=read.table(paste(DPATH,"Figure7/lambert/ENSG_TRUE_tf_lambert_zf_split_
 DBD=paste(DPATH,"Figure7/lambert/2018_AddAlignments/",sep="")
 
 ## all sets now length filtered
-tf.list  <- readAAm(sel=1:32,insets=tfsets)
+tf.list  <- readAAm(sel=2:32,insets=tfsets)
 dbd.list <- readAAm(sel=1:4,insets=dbdsets,P=DBD,addf='')
 
 pmat.tf2_10 <- process.mat(tf.list,"sAA",thresAA=0.10)
@@ -98,6 +98,17 @@ circos.dendrogram(dend, max_height = max_height)}, track.height = 0.4, bg.border
 text(0,0,"IDRs + DBDs\n(1446)  (365)")
 dev.off()
 
+## Cluster components used to calculate efficiencies 
+table(df1_gene_clusters[dbds.i]) 
+#1   2   3   5   6   7
+#2 136   9   1 213   4
+# (136+213)/365 = 0.9561644 ## efficiency DBD
+table(df1_gene_clusters[idrs.i])
+#  1   2   3   4   5   6   7 
+#383  47 260 313 167   8 268 
+# (1446-47-8)/1446 = 0.961964 ## efficiency IDRs
+
+
 
 ### Figure S7B
 cmat=pmat.dbd_10[[1]]
@@ -147,6 +158,14 @@ text(0,0,"DBDs\n(365)")
 
 dev.off()
 }
+## Cluster components used to calculate efficiencies 
+table(famind) ## number of family members in clustering
+#   1   2   3   4
+# 180  98  52  35
+for (i in 1:4){
+	table(famind[as.numeric(names(which(labels_col(df1)==i)))])
+}
+
 
 #################################################
 ### Figure S7C
