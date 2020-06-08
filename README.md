@@ -3,7 +3,7 @@
 ## About 
 Authors: Sebastian Mackowiak, Shaon Basu, Henri Niskanen, Dora Knezevic
 
-Complementary data for running most of the R scripts can be found at Mendeley, doi:""
+Complementary data for running most of the R scripts can be found at Mendeley, doi: 10.17632/ztd6wzcv7h.13
 
 ## Getting a copy 
 
