@@ -2,12 +2,11 @@
 
 ## About 
 ### Unblending of Transcriptional Condensates in Human Repeat Expansion Disease. 
-### Published:May 07, 2020 DOI:https://doi.org/10.1016/j.cell.2020.04.018
+#### Published:May 07, 2020 DOI:https://doi.org/10.1016/j.cell.2020.04.018
 
 Authors: Sebastian Mackowiak, Shaon Basu, Henri Niskanen, Dora Knezevic
 
-This github contains mainly the computational analysis to the study 
-
+This github contains mainly the computational analysis to the study. 
 
 Complementary data for running most of the R scripts can be found at Mendeley, doi: 10.17632/ztd6wzcv7h.13
 
